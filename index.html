@@ -17,14 +17,17 @@
     <span>Health: </span><span id='health'></span>
     <span>Hits: </span><span id='hits'></span>
     <span>Name: </span><span id='charName'></span>
-
-
   </header>
-  <img class="image" src="assets/200px-Dancing_Banana.gif" alt="Image">
-  <button class="btn btn-info" onclick='slap()'>Slap!</button>
-  <button class="btn btn-warning" onclick='punch()'>Punch!</button>
-  <button class="btn btn-danger" onclick='kick()'>Kick!</button>
 
+  <div>
+    <img class="image" src="assets/200px-Dancing_Banana.gif" alt="Image">
+    <button class="btn btn-info" onclick='slap()'>Slap!</button>
+    <button class="btn btn-warning" onclick='punch()'>Punch!</button>
+    <button class="btn btn-danger" onclick='kick()'>Kick!</button>
+  </div>
+  <button class="btn btn-primary" id='peel' onclick="givePeel()">Peel</button>
+  <button class="btn btn-primary" id='freeze' onclick='giveFreeze()'>Freeze</button>
+  <button class="btn btn-primary" id='blend' onclick='giveBlender()'>Blend</button>
 
 
   <script src="game.js"></script>
