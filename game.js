@@ -1,24 +1,37 @@
-var health = 100
-var hits = 0
-var charName = 'Banana'
+let target = {
+  name: 'Banana',
+  health: 100,
+  hits: 0
+}
+
+let items = {
+  peel: { name: 'Peel', modifier: 2, description: 'Exposed' },
+  freeze: { name: 'Freeze', modifier: 4, description: 'Tough Banana' },
+  blender: { name: 'Blender', 'modifier 20', description: 'WHHIIRR, WHHIIIRR' }
+}
 
 function slap() {
-  health--
+  target.health--
+  target.hits++
   update()
 }
 
 function punch() {
-  health -= 5
+  target.health -= 5
+  target.hits++
   update()
 }
 
 function kick() {
-  health -= 10
+  target.health -= 10
+  target.hits++
   update()
 }
 
 function update() {
-  document.getElementById('health').innerText = health
+  document.getElementById('health').innerText = target.health
+  document.getElementById('hits').innerText = target.hits
+  document.getElementById('charName').innerText = target.name
 }
 
 update()
