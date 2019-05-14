@@ -21,13 +21,14 @@
 
   <div>
     <img class="image" src="assets/200px-Dancing_Banana.gif" alt="Image">
-    <button class="btn btn-info" onclick='slap()'>Slap!</button>
-    <button class="btn btn-warning" onclick='punch()'>Punch!</button>
-    <button class="btn btn-danger" onclick='kick()'>Kick!</button>
+    <button class="btn btn-info" onclick="app.controllers.gameController.attackTarget('slap')">Slap!</button>
+    <button class="btn btn-warning" onclick='app.controllers.gameController.attackTarget("punch")'>Punch!</button>
+    <button class="btn btn-danger" onclick='app.controllers.gameController.attackTarget("kick")'>Kick!</button>
   </div>
-  <button class="btn btn-primary" id='peel' onclick="givePeel()">Peel</button>
-  <button class="btn btn-primary" id='freeze' onclick='giveFreeze()'>Freeze</button>
-  <button class="btn btn-primary" id='blend' onclick='giveBlender()'>Blend</button>
+  <button class="btn btn-primary" id='peel' onclick="app.controllers.gameController.addItemToTarget(0)">Peel</button>
+  <button class="btn btn-primary" id='freeze'
+    onclick='app.controllers.gameController.addItemToTarget(1)'>Freeze</button>
+  <button class="btn btn-primary" id='blend' onclick='app.controllers.gameController.addItemToTarget(2)'>Blend</button>
 
 
   <script src="game.js" type='module'></script>

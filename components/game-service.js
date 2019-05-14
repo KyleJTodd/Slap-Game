@@ -51,6 +51,7 @@ export default class GameService {
     }
     let attackDamage = _target.attacks[attackName] + attackMods
     _target.health -= attackDamage
+    _target.hits++
   }
 }
 
