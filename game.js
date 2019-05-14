@@ -1,15 +1,4 @@
-let target = {
-  name: 'Banana',
-  health: 100,
-  hits: 0,
-  items: []
-}
 
-let items = {
-  peel: { name: 'Peel', modifier: 2, description: 'Exposed' },
-  freeze: { name: 'Freeze', modifier: -4, description: 'Cold Banana' },
-  blender: { name: 'Blender', modifier: 20, description: 'WHHIIRRRRR' }
-}
 
 
 
