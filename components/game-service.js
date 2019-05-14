@@ -3,7 +3,7 @@ import Item from '../models/item.js'
 
 let _target = new Target('Banana', 100, 1, 5, 10);
 let peel = new Item('Peel', 5, 'Exposed Banana');
-let freeze = new Item('Freeze', -10, 'Hard Banana');
+let freeze = new Item('Freeze', -5, 'Hard Banana');
 let blend = new Item('Blend', 20, 'WWHHHIIIIRRRR');
 
 let _items = [peel, freeze, blend]
